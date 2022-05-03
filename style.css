@@ -3,12 +3,12 @@
     padding: 0;
     }
 
-    .header {
+    .text-box{
     background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)),url(/images/bg-image.jpg); 
     background-position: center;
     background-size: cover;
     position: relative;
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100%;
     }
 
@@ -18,7 +18,9 @@
     justify-content:space-between;
     align-items: center;
     overflow: hidden;
-    background-color: #4B4B4B;
+    background: #4B4B4B;
+backdrop-filter: blur(30px);
+-webkit-backdrop-filter: blur(30px);
     }
 
     nav img { 
@@ -50,45 +52,54 @@
     position: relative;
     }
 
+    .nav-links ul li a:hover{
+    color: #a29574;
+    }
+
     .nav-links ul li a {
-    font-family: lato,sans-serif;
+    font-family: 'lato',sans-serif;
     font-weight: 500;
     font-style: normal;
+    letter-spacing: 1.5px;
     color: #AFA17E;
     text-decoration: none;
     }
 
     .hero-btn {
-        display: flex;
-        align-content: flex-end;
-        font-family: lato,sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        border: none;
-        color: #000000;
-        padding: 6px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 15px;
-        margin: 15px 2px;
-        cursor: pointer;
-        background-color: #B0A17C;
-        border-radius: 50px;
+    font-family: 'lato', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.9px;
+    border: none;
+    color: #000000;
+    padding: 6px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 15px 2px;
+    cursor: pointer;
+    background-color: #B0A17C;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    }
+
+    .hero-btn:hover {
+    background-color: #a29574;
     }
 
     .text-box h1 {
-    font-family: bennet-banner, sans-serif;
+    font-family: 'bennet-banner', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 55px;
     color: #FFFFFF;
     }
 
     .text-box h2{
-    font-family: lato, sans-serif;
+    font-family: 'lato', sans-serif;
+    font-weight: 300;
     font-style: normal;
-    font-weight: 400;
+    letter-spacing: 1.4px;
     font-size: 14px;
     color:#FFFFFF; 
     transform: uppercase;
@@ -99,6 +110,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     }
-
-
