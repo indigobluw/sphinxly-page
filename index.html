@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="https://use.typekit.net/cxo8apd.css" />
     <link rel="stylesheet" href="https://use.typekit.net/adq0hsb.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="myscripts.js"></script>
     <title>Sphinxly Test</title>
   </head>
   <body>
-    <section class= "header">
+    <section class= "homepage">
       <nav>
         <a href= "index.html"><img src="/images/test-logga.svg" /></a>
         <div class= "nav-links" id="navLinks">
@@ -32,11 +31,11 @@
       </div>
       </div>
     </section>
-    <div class="background-popup">
+    <section class="background-popup">
         <div class="popup">
           <div class="close-btn">
             <a href="">
-              <img src="/images/close-symbol.svg" alt="close-btn" />
+              <img src="/images/close-symbol.svg" />
             </a>
           </div>
           <div class="form">
@@ -48,7 +47,7 @@
               <input type="text" id="name" placeholder="Namn" />
             </div>
             <div class="form-element">
-              <button>Logga in</button>
+              <button id="login-btn">Logga in</button>
             </div>
             <div class="form-underscore">
               <p>
@@ -58,19 +57,7 @@
             </div>
           </div>
         </div>
-      </div>
-    <script>
-        document
-          .getElementById("hero-btn")
-          .addEventListener("click", function () {
-            document.querySelector(".background-popup").style.display = "flex";
-          });
-  
-        document
-          .getElementsById("close-btn")
-          .addEventListener("click", function () {
-            document.querySelector(".background-popup").style.display = "none";
-          });
-      </script>
+    </section>
+    <script src="/myscripts.js"></script>
   </body>
 </html>
