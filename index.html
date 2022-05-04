@@ -11,11 +11,11 @@
     <title>Sphinxly Test</title>
   </head>
   <body>
-    <section class="header">
+    <section class= "header">
       <nav>
-        <a href="index.html"><img src="/images/test-logga.svg" /></a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa-fa times" onClick="hideMenu()"></i>
+        <a href= "index.html"><img src="/images/test-logga.svg" /></a>
+        <div class= "nav-links" id="navLinks">
+          <i class= "fa-fa times" onClick="hideMenu()"></i>
           <ul>
             <li><a href="">PRODUKTER</a></li>
             <li><a href="">OM OSS</a></li>
@@ -25,21 +25,16 @@
         <a href="" class="hero-btn">LOGGA IN</a>
         <i class="fa fa-bars" onClick="showMenu()"></i>
       </nav>
-      <div class="text-box">
+      <div class = "text-box">
         <h2>ETT NYTT SÄTT ATT UPPTÄCKA</h2>
         <h1>Silkeslena produkter med</h1>
         <h1>glansiga detaljer</h1>
       </div>
+      <div class = "login-popup">
+          <div class = "close-btn">&times;</div>
+      <div class = "form">
+      </div>
+      </div>
     </section>
-    <script>
-      var navLinks = document.getElementById("navLinks");
-
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
-    </script>
   </body>
 </html>

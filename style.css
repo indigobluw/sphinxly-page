@@ -8,25 +8,28 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    min-height: 90vh;
+    min-height: 91.4vh;
     width: 100%;
+    opacity: 0.9;
     }
 
     nav {
     display: flex;
-    padding:0.5% 3%;
+    padding-left: 3%;
+    padding-right: 3%;
     justify-content:space-between;
     align-items: center;
     overflow: hidden;
-    background: #4B4B4B;
-backdrop-filter: blur(30px);
--webkit-backdrop-filter: blur(30px);
+    background: #4B4B4B 0% 0% no-repeat padding-box;
+    opacity: 1;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     }
 
     nav img { 
     width: 42px;
     height: 48px;
-    padding: auto;
+
     }
 
     .nav-links { 
@@ -81,6 +84,7 @@ backdrop-filter: blur(30px);
     border-radius: 50px;
     display: inline-block;
     position: relative;
+    
     }
 
     .hero-btn:hover {
