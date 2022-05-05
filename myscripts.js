@@ -8,4 +8,5 @@ document.getElementsById("close-btn").addEventListener("click", function () {
 
 document.getElementsById("login-btn").addEventListener("click", function () {
   document.querySelector(".background-popup").style.display = "none";
+  
 });
