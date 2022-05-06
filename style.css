@@ -1,6 +1,7 @@
     * {
     margin: 0;
     padding: 0;
+    
     }
 
 
@@ -80,8 +81,14 @@
     border-radius: 50px;
     display: inline-block;
     position: relative;
-    
     }
+
+    
+    .login-btn {
+        text-decoration: none;
+    }
+
+
 
     .hero-btn:hover {
     background-color: #a29574;
@@ -160,7 +167,9 @@
     /* Login CSS */ 
 
 
-
+        .background-popup.active {
+        opacity: 1;
+        }
 
         .background-popup {
         background: rgba(0, 0, 0, 0.6);
@@ -169,6 +178,7 @@
         position: absolute;
         display: none;
         top: 0;
+        opacity: 1;
         }
         
         .popup {
@@ -176,7 +186,6 @@
         top: 50%; 
         left: 50%; 
         transform: translate(-50%, -50%);
-        opacity: 1;
         width: 341px;
         height: 250px;
         padding: 0px 30px 30px 30px;
@@ -252,6 +261,7 @@
         font-weight: 300;
         font-style: normal;
         box-sizing: border-box;
+        
         }
 
         .popup .form .form-element button:hover {
