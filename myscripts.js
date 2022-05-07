@@ -16,6 +16,12 @@ hbtn.addEventListener("click", function () {
   }
 });
 
+const saveToLocalStorage = () => {
+  localStorage.setItem("inputsName", result.textContent);
+};
+
+lbtn.addEventListener("click", saveToLocalStorage);
+
 lbtn.addEventListener("click", function () {
   if (lbtn.innerText === "Logga in") {
     document.querySelector(".background-popup").style.display = "none";
