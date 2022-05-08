@@ -20,14 +20,12 @@ const saveToLocalStorage = () => {
   localStorage.setItem("inputsName", result.textContent);
 };
 
-var getItem = () => {
-  localStorage.getItem("inputsName");
-};
+var getItem = localStorage.getItem.innerText
 
 lbtn.addEventListener("click", saveToLocalStorage);
 
 lbtn.addEventListener("click", function () {
-  if (lbtn.innerText === "Logga in" && getItem.value === nameInput.textContent) {
+  if (lbtn.innerText === "Logga in" && nameInput.innerText == localStorage.getItem.innerText ) {
     document.querySelector(".background-popup").style.display = "none";
     document.querySelector(".login-again").style.display = "flex";
     document.querySelector(".result").style.display = "flex";
