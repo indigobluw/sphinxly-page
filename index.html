@@ -1,64 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://use.typekit.net/cxo8apd.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/adq0hsb.css" />
-    <link rel="stylesheet" href="style.css" />
+    <script src = "https://use.fontawesome.com/14349de17f.js"></script>
+    <meta charset = "UTF-8" />
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <link rel = "stylesheet" href = "https://use.typekit.net/cxo8apd.css" />
+    <link rel = "stylesheet" href = "https://use.typekit.net/adq0hsb.css" />
+    <link rel = "stylesheet" href = "style.css" />
     <title>Sphinxly Test</title>
   </head>
   <body>
-    <section class= "homepage">
+    <section class = "homepage">
       <nav>
-        <a href= "index.html"><img src="/images/test-logga.svg" /></a>
-        <div class= "nav-links" id="navLinks">
-          <i class= "fa-fa times" onClick="hideMenu()"></i>
+        <a href = "index.html"><img src = "/images/test-logga.svg" /></a>
+        <div class = "nav-links" id="navLinks">
+          <i class = "fa fa-times" onClick="hideMenu()"></i>
           <ul>
-            <li><a href="">PRODUKTER</a></li>
-            <li><a href="">OM OSS</a></li>
-            <li><a href="">BESTÄLLNING</a></li>
+            <li><a href = "">PRODUKTER</a></li>
+            <li><a href = "">OM OSS</a></li>
+            <li><a href = "">BESTÄLLNING</a></li>
           </ul>
         </div>
-        <p class ="login-confirm" id ="login-confirm">DU ÄR INLOGGAD SOM <b><p id="result" class="result"></p></b> </p>
-        <p class ="login-again">VÄLKOMMEN TILLBAKA! DU ÄR INLOGGAD SOM <b><p id="result" class ="result"></p></b></p>
-        <button class="hero-btn" id="hero-btn">LOGGA IN </button> 
+        <p class = "login-confirm" id = "login-confirm">DU ÄR INLOGGAD SOM <b><p id = "result" class = "result"></p></b></p>
+        <p class = "login-again">VÄLKOMMEN TILLBAKA! DU ÄR INLOGGAD SOM <b><p id = "result" class = "result"></p></b></p>
+        <button class = "hero-btn" id="hero-btn">LOGGA IN</button> 
+        <i class = "fa fa-bars" onclick="showMenu()"></i>
       </nav>
       <div class = "text-box">
-        <h2>ETT NYTT SÄTT ATT UPPTÄCKA</h2>
-        <h1>Silkeslena produkter med</h1>
-        <h1>glansiga detaljer</h1>
+        <h2>Ett nytt sätt att upptäcka</h2>
+        <h1>Silkeslena produkter med <br>glansiga detaljer</h1>
       </div>
       </div>
       </div>
     </section>
-    <section class="background-popup">
-        <div class="popup">
-          <div class="close-btn" id="close-btn">
-              <img src="/images/close-symbol.svg" />
+    <section class = "background-popup">
+        <div class = "popup">
+          <div class = "close-btn" id = "close-btn">
+              <img src = "/images/close-symbol.svg" />
           </div>
-          <div class="form">
-            <div class="form-element">
+          <div class = "form">
+            <div class = "form-element">
               <h2>Logga in</h2>
               <p>Använd ditt namn för att logga in</p>
             </div>
-            <div class="name-input">
-               <input id="nameInput" class="nameInput" type="text" placeholder="Namn" /> 
+            <div class = "name-input">
+               <input id = "nameInput" class = "nameInput" type = "text" placeholder = "Namn" /> 
             </div>
-            <div class="form-element">
-              <button class= "login-btn" id="login-btn" >Logga in</button>
-             <!--<p class = "text" id="text">Text</p> -->
+            <div class = "form-element">
+              <button class = "login-btn" id = "login-btn">Logga in</button>
             </div>
-            <div class="form-underscore">
+            <div class = "form-underscore">
               <p>
                 Genom att logga in godkänner du
-                <a href="https://www.google.com"><u>våra villkor</u></a>
+                <a href = "https://www.google.com"><u>våra villkor</u></a>
               </p>
             </div>
           </div>
         </div>
     </section>
-    <script src="/myscripts.js"></script>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+        function showMenu() {navLinks.style.right = "0";}
+      function hideMenu() {navLinks.style.right = "-200px";}
+    </script>
+    <script src = "/myscripts.js"></script>
   </body>
 </html>
