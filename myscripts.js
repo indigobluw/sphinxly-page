@@ -27,6 +27,7 @@ lbtn.addEventListener("click", function () {
   if (lbtn.innerText === "Logga in" && nameInput.value == localStorage.getItem("inputsName")) {
     document.querySelector(".background-popup").style.display = "none";
     document.querySelector(".login-again").style.display = "flex";
+    document.querySelector(".login-confirm").style.display = "flex";
     document.querySelector(".result").style.display = "flex";
     hbtn.innerText = "LOGGA UT";
   } else if (lbtn.innerText === "Logga in") {
