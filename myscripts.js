@@ -7,6 +7,9 @@ const lbtns = document.querySelector(".login-btn");
 var getItem = localStorage.getItem.innerText;
 
 
+/*Jag har försökt med olika funktioner. I den här försökte jag jämföra "currentUsername" med det som finns i
+localstorage. Men, b.la. Strigify ville inte göra sitt jobb. Fick det inte att fungera.
+
 /*function save () {
   var newData = document.getElementById("nameInput").value;
   
@@ -18,9 +21,9 @@ var getItem = localStorage.getItem.innerText;
   oldData.push(newData);
 
   localStorage.setItem("data", JSON.stringify(oldData));
-}*/
+}
 
-/*function login(username) {
+function login(username) {
 localStorage.setItem('currentUsername', username)
  const usernames = JSON.parse(localStorage.getItem('allUsernames')) || []
 const newUsernames = [...usernames, username]

@@ -7,34 +7,19 @@ const lbtns = document.querySelector(".login-btn");
 var getItem = localStorage.getItem.innerText;
 
 
-/*function save () {
-  var newData = document.getElementById("nameInput").value;
-  
-  if (localStorage.getItem("data") == null) {
-    localStorage.setItem("data", "[]");
-  }
-
-  var oldData = JSON.parse(localStorage.getItem("data"));
-  oldData.push(newData);
-
-  localStorage.setItem("data", JSON.stringify(oldData));
-}*/
-
 function login(username) {
-localStorage.setItem('currentUsername', username)
- const usernames = JSON.parse(localStorage.getItem('allUsernames')) || []
-const newUsernames = [...usernames, username]
-localStorage.setItem('allUsernames', JSON.stringify(newUsernames))
+  localStorage.setItem("currentUsername", username);
+  const usernames = JSON.parse(localStorage.getItem("allUsernames")) || [];
+  const newUsernames = [...usernames, username];
+  localStorage.setItem("allUsernames", JSON.stringify(newUsernames));
 }
 function logout() {
-localStorage.removeItem('currentUsername')
+  localStorage.removeItem("currentUsername");
 }
 function isNewUsername(username) {
-const usernames = JSON.parse(localStorage.getItem('allUsernames'))
-return !usernames.includes(username)
+  const usernames = JSON.parse(localStorage.getItem("allUsernames"));
+  return !usernames.includes(username);
 }
-
-
 
 hbtn.addEventListener("click", function () {
   if (hbtn.innerText === "LOGGA IN") {
@@ -49,21 +34,24 @@ hbtn.addEventListener("click", function () {
 
 const saveToLocalStorage = () => {
   var newData = document.getElementById("nameInput").value;
-  
-  if (localStorage.getItem("data") == null) {
+
+  /*if (localStorage.getItem("data") == null) {
     localStorage.setItem("data", "[]");
+  }*/
+  if (nameInput.value !== localStorage.getItem("data")) {
+    var oldData = JSON.parse(localStorage.getItem("data"));
+    oldData.push(newData);
+    localStorage.setItem("data", JSON.stringify(oldData));
   }
-
-  var oldData = JSON.parse(localStorage.getItem("data"));
-  oldData.push(newData);
-
-  localStorage.setItem("data", JSON.stringify(oldData));
 };
 
 lbtn.addEventListener("click", saveToLocalStorage);
 
 lbtn.addEventListener("click", function () {
-  if (lbtn.innerText === "Logga in" && nameInput.value == localStorage.getItem("data")) {
+  if (
+    lbtn.innerText === "Logga in" &&
+    nameInput.value == localStorage.getItem("data")
+  ) {
     document.querySelector(".background-popup").style.display = "none";
     document.querySelector(".login-again").style.display = "flex";
     document.querySelector(".login-confirm").style.display = "flex";
@@ -81,5 +69,7 @@ cbtn.addEventListener("click", function () {
   document.querySelector(".background-popup").style.display = "none";
 });
 
-nameInput.addEventListener("input", (letter) => (result.textContent = letter.target.value)
+nameInput.addEventListener(
+  "input",
+  (letter) => (result.textContent = letter.target.value)
 );
