@@ -20,7 +20,7 @@ var getItem = localStorage.getItem.innerText;
   localStorage.setItem("data", JSON.stringify(oldData));
 }*/
 
-/*function login(username) {
+function login(username) {
 localStorage.setItem('currentUsername', username)
  const usernames = JSON.parse(localStorage.getItem('allUsernames')) || []
 const newUsernames = [...usernames, username]
@@ -32,7 +32,7 @@ localStorage.removeItem('currentUsername')
 function isNewUsername(username) {
 const usernames = JSON.parse(localStorage.getItem('allUsernames'))
 return !usernames.includes(username)
-}*/
+}
 
 
 
@@ -53,9 +53,6 @@ const saveToLocalStorage = () => {
   if (localStorage.getItem("data") == null) {
     localStorage.setItem("data", "[]");
   }
-  else if (nameInput.value == localStorage.getItem("data")) {
-    
-  }
 
   var oldData = JSON.parse(localStorage.getItem("data"));
   oldData.push(newData);
@@ -63,7 +60,7 @@ const saveToLocalStorage = () => {
   localStorage.setItem("data", JSON.stringify(oldData));
 };
 
-
+lbtn.addEventListener("click", saveToLocalStorage);
 
 lbtn.addEventListener("click", function () {
   if (lbtn.innerText === "Logga in" && nameInput.value == localStorage.getItem("data")) {
@@ -79,8 +76,6 @@ lbtn.addEventListener("click", function () {
     hbtn.innerText = "LOGGA UT";
   }
 });
-
-lbtn.addEventListener("click", saveToLocalStorage);
 
 cbtn.addEventListener("click", function () {
   document.querySelector(".background-popup").style.display = "none";

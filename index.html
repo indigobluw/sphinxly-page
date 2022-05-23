@@ -50,7 +50,7 @@
                <input id = "nameInput" class = "nameInput" type = "text" placeholder = "Namn" /> 
             </div>
             <div class = "form-element">
-              <button class = "login-btn" id = "login-btn" onclick="save();">Logga in</button>
+              <button class = "login-btn" id = "login-btn">Logga in</button>
             </div>
             <div class = "form-underscore">
               <p>
@@ -63,8 +63,8 @@
     </section>
     <script>
       var navLinks = document.getElementById("navLinks");
-        function showMenu() {navLinks.style.right = "0";}
-      function hideMenu() {navLinks.style.right = "-200px";}
+        function showMenu() {navLinks.style.display = "flex";}
+      function hideMenu() {navLinks.style.display = "none";}
     </script>
     <script src = "/myscripts.js"></script>
   </body>

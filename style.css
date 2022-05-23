@@ -19,8 +19,7 @@
     padding-right: 3%;
     justify-content:space-between;
     align-items: center;
-    overflow: hidden;
-    background: #444950 0% 0% no-repeat padding-box;
+    background: #27313e 0% 0% no-repeat padding-box;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     }
@@ -81,12 +80,12 @@
     background-color: #B0A17C;
     border-radius: 50px;
     display: inline-block;
-    position: relative;
+    position: flex-end;
     }
 
     
     .login-btn {
-        text-decoration: none;
+    text-decoration: none;
     }
 
     .hero-btn:hover {
@@ -99,7 +98,7 @@
 
     .login-message {
     display: flex;
-    flex-direction: row;
+    
     }
 
 
@@ -108,17 +107,7 @@
 
 
 
-    .login-confirm {
-    display: none;
-    font-family: 'lato', sans-serif;
-    padding-right: 3px;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 10px;
-    letter-spacing: 0.6px;
-    color: #FFFFFF;
-    }
-
+    .login-confirm, 
     .login-again {
     display: none;
     font-family: 'lato', sans-serif;
@@ -142,12 +131,12 @@
     text-transform: uppercase;
     }
 
-    .text-box{
+    .homepage{
     background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)),url(/images/bg-image.jpg); 
     background-position: center;
     background-size: cover;
     position: relative;
-    min-height: 91.4vh;
+    min-height: 100vh;
     width: 100%;
     opacity: 0.9;
     }
@@ -158,6 +147,8 @@
     font-weight: 600;
     font-size: 55px;
     color: #FFFFFF;
+    position: relative;
+    top:30vh;
     }
 
     .text-box h2{
@@ -168,6 +159,8 @@
     font-size: 14px;
     color:#FFFFFF; 
     text-transform: uppercase;
+    position: relative;
+    top: 30vh;
     }
 
     .text-box {
@@ -298,19 +291,17 @@
     }
 
     .nav-links ul li { 
-    display: block;
+    float:left;
     }
 
     .nav-links { 
-    position: absolute;
-    background: #444950;
-    height: 100vh;
-    width: 200px;
+    display: none;
+    position:absolute;
+    background-color: #27313e;
     top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
+    right: 0;
+    cursor: pointer;
+    width: 100%;
     }
 
     nav .fa { 
@@ -319,8 +310,8 @@
     font-size: 22px;
     cursor: pointer;
     }
-
-    .nav-links ul { 
-    padding: 30px;   
+    
+    .hero-btn {
+    font-size: 12px;
     }
     }
